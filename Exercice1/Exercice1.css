@@ -1,0 +1,48 @@
+#container {
+  width: 600px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: auto;
+}
+.title {
+  background-color: rgb(20, 214, 198);
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+hr {
+  height: 10px;
+}
+#tableau {
+  width: 100%;
+}
+#tableau td,
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+.colonneEnGras {
+  font-weight: bold;
+}
+#numeroCartLabel {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#numeroCartInput {
+  margin-bottom: 2px;
+}
+button {
+  width: 120px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#montant {
+  font-weight: bold;
+}
+.quantite {
+  width: inherit;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+  outline: 0;
+}

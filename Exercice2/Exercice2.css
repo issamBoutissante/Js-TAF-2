@@ -1,0 +1,23 @@
+header {
+  background-color: #ff6600;
+  text-align: center;
+  padding: 10px;
+}
+
+#insritsTable td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+.tdHead {
+  background-color: #008080;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+textarea {
+  resize: none;
+}
+#insritsTable {
+  width: 100%;
+}

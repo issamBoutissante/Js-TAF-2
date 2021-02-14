@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Exercice2.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Inscription au tirage au sort du pelerinage de l'année 2022</h1>
+    </header>
+    <div>
+      <h2>Informations personnelles</h2>
+      <hr />
+      <table>
+        <tr>
+          <td>CIN:</td>
+          <td><input type="text" id="cin" /></td>
+        </tr>
+        <tr>
+          <td>NOM:</td>
+          <td><input type="text" id="nom" /></td>
+        </tr>
+        <tr>
+          <td>PRENOM:</td>
+          <td><input type="text" id="prenom" /></td>
+        </tr>
+        <tr>
+          <td>Année de dernier pélerinage:</td>
+          <td>
+            <select id="anneeDernierAcco">
+              <option>2015</option>
+              <option>1014</option>
+              <option>1013</option>
+              <option>2012</option>
+              <option>2011</option>
+              <option>2010</option>
+              <option>2009</option>
+              <option>2008</option>
+              <option>2007</option>
+              <option>2006</option>
+              <option>2005</option>
+              <option>2004</option>
+              <option>2003</option>
+              <option>2002</option>
+              <option>2001</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Sexe:</td>
+          <td>
+            <input type="radio" name="sexe" id="homme" value="H" />H
+            <input type="radio" name="sexe" id="femme" value="F" checked />F
+          </td>
+        </tr>
+      </table>
+      <div id="accoumpagnateur">
+        <h2>Accompagnateur (Mahram)</h2>
+        <hr />
+        <table>
+          <tr>
+            <td>CIN de l'accompagnateur</td>
+            <td><input type="text" id="accoumpagnateurCin" /></td>
+          </tr>
+          <tr>
+            <td>Lien familail</td>
+            <td>
+              <select id="lienFAmilail">
+                <option>Frére</option>
+                <option>Pére</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h2>Dossier Medicale</h2>
+      <hr />
+      <table>
+        <tr>
+          <td>Groupe sanguin:</td>
+          <td>
+            <select id="sangGroup">
+              <option>B+</option>
+              <option>B-</option>
+              <option>A-</option>
+              <option>A+</option>
+              <option>AB+</option>
+              <option>AB-</option>
+              <option>O+</option>
+              <option>O-</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Maladies:</td>
+          <td><textarea id="maladies" cols="20" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="S'inscrire" id="inscrire" /></td>
+        </tr>
+      </table>
+      <hr />
+      <h2>Liste des inscris</h2>
+      <hr />
+      <table id="insritsTable">
+        <tr>
+          <td class="tdHead">CIN</td>
+          <td class="tdHead">Nom</td>
+          <td class="tdHead">Prénom</td>
+          <td class="tdHead">Année dernier pélerinage</td>
+          <td class="tdHead">Sexe</td>
+          <td class="tdHead">CIN accompagnateur</td>
+          <td class="tdHead">Lien familail</td>
+          <td class="tdHead">Groupe sanguin</td>
+          <td class="tdHead">Maladies</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script src="./Exercice2.js"></script>
+</html>

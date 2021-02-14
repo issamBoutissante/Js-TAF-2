@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="Exercice1.css" />
+  </head>
+  <body>
+    <form>
+      <section id="container">
+        <h1 class="title">Vente Pizza</h1>
+        <table>
+          <tr>
+            <td>Nom Client</td>
+            <td><input type="text" id="nom" required /></td>
+          </tr>
+          <tr>
+            <td>Adress</td>
+            <td><input type="text" size="30px" id="adresse" required /></td>
+          </tr>
+        </table>
+        <hr />
+        <h3 class="title">Produits a acheter</h3>
+        <table id="tableau">
+          <tr>
+            <th>Nom de Produit</th>
+            <th>Prix Unitaire en DH</th>
+            <th>Quantite</th>
+          </tr>
+          <tr>
+            <td>Pizza 4 Fromages</td>
+            <td class="colonneEnGras">80</td>
+            <td class="colonneEnGras">
+              <input
+                type="number"
+                class="quantite"
+                id="pizza_1"
+                value="1"
+                onchange="calculerMontant()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Pizza Herbo</td>
+            <td>75</td>
+            <td>
+              <input
+                type="number"
+                class="quantite"
+                id="pizza_2"
+                onchange="calculerMontant()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Pizza viande hachee</td>
+            <td class="colonneEnGras">100</td>
+            <td class="colonneEnGras">
+              <input
+                type="number"
+                class="quantite"
+                id="pizza_3"
+                value="2"
+                onchange="calculerMontant()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Pizza fruits de mer</td>
+            <td>120</td>
+            <td>
+              <input
+                type="number"
+                class="quantite"
+                id="pizza_4"
+                onchange="calculerMontant()"
+              />
+            </td>
+          </tr>
+        </table>
+        <hr />
+        <form>
+          <h3>Paiement par:</h3>
+          <input type="radio" name="paiement" checked id="carteBancaireRadio" />
+          <strong>Carte Bancaire</strong>
+          <input type="radio" name="paiement" id="chequeRadio" value="cheque" />
+          <strong>Cheque</strong>
+          <p id="numeroCartLabel">Numero de la carte bancaire</p>
+          <input id="numeroCartInput" type="text" required /><br />
+          <button id="envoyer">Envoyer</button>
+          <br />
+          <strong
+            >Merci pout votre visite,le montant de votre commande est :</strong
+          ><input id="montant" type="text" value="280" readonly />
+        </form>
+      </section>
+    </form>
+  </body>
+  <script src="./Exercice1.js"></script>
+</html>
